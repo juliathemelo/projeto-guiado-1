@@ -7,7 +7,7 @@ import { Aluno } from './entities/aluno.entity';
 export class AlunosService {
   private alunos: Aluno[] = [];
 
-  create(createAlunoDto: CreateAlunoDto): Aluno {
+  cadastro(createAlunoDto: CreateAlunoDto): Aluno {
     const newAluno = new Aluno(
       createAlunoDto.id,
       createAlunoDto.nome,

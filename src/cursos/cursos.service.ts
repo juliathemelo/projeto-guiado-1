@@ -7,7 +7,7 @@ import { Curso } from './entities/curso.entity';
 export class CursosService {
   private cursos: Curso[] = [];
 
-  create(createCursoDto: CreateCursoDto) {
+  matricula(createCursoDto: CreateCursoDto) {
     const newCurso = new Curso(
       createCursoDto.id,
       createCursoDto.titulo,

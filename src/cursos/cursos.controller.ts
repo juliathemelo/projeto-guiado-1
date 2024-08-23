@@ -9,7 +9,7 @@ export class CursosController {
 
   @Post()
   create(@Body() createCursoDto: CreateCursoDto) {
-    return this.cursosService.create(createCursoDto);
+    return this.cursosService.matricula(createCursoDto);
   }
 
   @Get()

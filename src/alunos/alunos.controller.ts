@@ -9,7 +9,7 @@ export class AlunosController {
 
   @Post()
   create(@Body() createAlunoDto: CreateAlunoDto) {
-    return this.alunosService.create(createAlunoDto);
+    return this.alunosService.cadastro(createAlunoDto);
   }
 
   @Get()
